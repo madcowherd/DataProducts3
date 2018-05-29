@@ -1,0 +1,39 @@
+---
+title       : Les Miserables Co-Appearance Application
+subtitle    : A Pitch
+author      : Sam Camp
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Need
+
+You are reading Victor Hugo's marvelous Les Miserables, and you realize you have no way of visualizing the groups of characters by co-appearance.
+
+--- .class #id
+
+## The Application
+
+![APicture](./assets/img/app1.png)
+
+--- .class #id 
+
+## Details
+
+ * The application uses [visNetwork](https://datastorm-open.github.io/visNetwork/) to display the data.
+ * The [data set](http://www-personal.umich.edu/~mejn/netdata/lesmis.zip) comes from Donald Knuth's The Standford GraphBase: A Platform for Combinatorial Computing
+
+--- .class #id
+
+## Results
+
+This slide exists to show R-embed code. Hopefully this app will make you feel like this graph.
+
+```{r, echo = FALSE}
+curve(x^1, 0, 2)
+```
